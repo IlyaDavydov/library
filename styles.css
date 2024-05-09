@@ -1,0 +1,188 @@
+:root {
+    --main-color: white;
+    --second-color: black; 
+    --third-color: darkgray; 
+    --fourth-color: black; 
+}
+
+@font-face {
+    font-family: libraryFont;
+    src: url('PoetsenOne-Regular.ttf') format('truetype');
+}
+
+body, header, .header select, .header button {
+    font-family: libraryFont, sans-serif;
+}
+
+.header select, .header button, .header p {
+    font-size: 22px;
+}
+
+body {
+   display: flex;
+   flex-direction: column; 
+   margin: 0;
+   align-items: center;
+   background-color: var(--main-color);
+}
+
+/* header zone */
+
+.header {
+    display: flex;
+    height: 100px;
+    width: 100vw;
+    align-items: center;
+    color: var(--main-color);
+    background-color: var(--fourth-color);
+}
+
+.header img {
+    height: 40px;
+    width: 40px;
+}
+
+.header h1 {
+    margin-left: 75px;
+}
+
+.header button {
+    margin-left: 200px;
+    outline: none;
+    border: none;
+}
+
+.header button, .header select {
+    background-color: var(--main-color);
+    color: var(--second-color);
+    border-radius: 20px;
+}
+
+.header select {
+    margin-left: 5px;
+}
+
+.header .p1 {
+    margin-left: 75px;
+}
+
+.header .p2 {
+    margin-left: 75px;
+}
+
+.header img {
+    margin-left: 150px;
+}
+
+/* library zone */
+
+.grid-container {
+    box-sizing: border-box;
+    width: 75%;
+    border-radius: 20px;
+    border: 10px solid var(--fourth-color);
+    margin: 50px;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 217.5px));
+    padding: 50px;
+    gap: 50px
+}
+
+.book {
+    border: 10px solid var(--fourth-color);
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 14px;
+    gap: 14px;
+    background-color: var(--third-color);
+}
+
+.book * {
+    text-align: center;
+    margin: 0px;
+    font-size: 20px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+.book .title, .book .author, .book .year {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+} 
+
+.book .status {
+    background-color: green;
+    height: auto;
+}
+
+.book .delete {
+    background-color: red;
+    height: auto;
+}
+
+/* pop-up zone */ 
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.form {
+    display: none;
+    border-radius: 20px;
+    border: 10px solid var(--fourth-color);
+    height: 400px;
+    width: 400px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--third-color);
+    color: black;
+    font-size: 24px;
+}
+
+.check {
+    display: flex;
+}
+
+.form .title, .form .author, .form .year, .form button, .check {
+    border: 2px solid var(--second-color);
+    height: 10%;
+    width: 225px;
+    font-size: 24px;
+    border-radius: 20px;
+    background-color: var(--main-color);
+    color: var(--second-color);
+    font-family: libraryFont, sans-serif;
+    outline: none;
+}
+
+.check {
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.form button {
+    margin-top: 27px;
+}
+
+
+input::placeholder {
+    font-family: libraryFont, sans-serif;
+    color: var(--second-color);
+}
+
+
