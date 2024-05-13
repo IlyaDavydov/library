@@ -1,0 +1,16 @@
+
+This project helped me deepen my knowledge of JavaScript, especially in creating and using objects.
+Until now, my JavaScript projects mainly involved working with the DOM, but this time I had to essentially connect two worlds: data organized in arrays and the visual part (DOM).
+It was particularly interesting to implement functions for dynamic adding and removing, which had to automatically change the IDs of elements in the array and in the DOM and link everything together.
+Additionally, in CSS, I reinforced my knowledge of grid. I also worked with colors as variables for easy switching between light and dark themes.
+
+Functionality:
+
+Dynamic addition and removal of cards (books)
+Light/dark theme
+Sorting books by year/author/title/date added
+Filtering books by read/unread status
+Combining filtering and sorting together
+Dynamic changing of book status (read/unread)
+
+Visualition: https://ilyadavydov.github.io/library/
